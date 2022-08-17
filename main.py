@@ -14,7 +14,7 @@ parser.add_argument('--test_data', dest='test_data', default='/content/SAR-CNN-t
 parser.add_argument('--real_sar', dest='real_sar', type=int, default=0, help='real data flag. 1 = real, 0 = simulated')
 args = parser.parse_args()
 
-checkpoint_dir = '/content/SAR-CNN-test/checkpoint'
+checkpoint_dir = 'checkpoint'
 if not os.path.exists(args.test_dir):
         os.makedirs(args.test_dir)
 from model import denoiser
