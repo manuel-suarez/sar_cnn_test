@@ -9,8 +9,8 @@ print(tf.__version__)
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('--use_gpu', dest='use_gpu', type=int, default=1, help='GPU flag. 1 = gpu, 0 = cpu')
-parser.add_argument('--test_dir', dest='test_dir', default='/content/test', help='test examples are saved here')
-parser.add_argument('--test_data', dest='test_data', default='/content/SAR-CNN-test/test_data', help='data set for testing')
+parser.add_argument('--test_dir', dest='test_dir', default='test', help='test examples are saved here')
+parser.add_argument('--test_data', dest='test_data', default='test_data', help='data set for testing')
 parser.add_argument('--real_sar', dest='real_sar', type=int, default=0, help='real data flag. 1 = real, 0 = simulated')
 args = parser.parse_args()
 
